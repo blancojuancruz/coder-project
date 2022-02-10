@@ -277,11 +277,9 @@
     justify-content: center;
     margin: 1rem;
     padding: .5em;
-    box-shadow: 0px 5px 9px 2px rgba(156,156,156,1);
-    -webkit-box-shadow: 0px 5px 9px 2px rgba(156,156,156,1);
-    -moz-box-shadow: 0px 5px 9px 2px rgba(156,156,156,1);
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+    top: -6px;
     font-family: 'Montserrat', serif;
-    background-color: #c2e1f7;
 }
 
 .contenido-principal {
@@ -289,11 +287,6 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0 1em;
-}
-
-.img-container {
-    width: 150px;
-    height: 134px;
 }
 
 .titulo {
