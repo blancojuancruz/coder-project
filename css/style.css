@@ -7,10 +7,7 @@
 }
 
 .html {
-    width: fit-content;
-    min-width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    min-width: 100vw;
 }
 
 /* Header Styles */
@@ -18,7 +15,7 @@
 /* Estilos logo */
 
 .header-container {
-    min-width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -175,6 +172,7 @@
 
 .slider-container {
     overflow: hidden;
+    width: 99vw;
 }
 
 .slides {
@@ -186,7 +184,7 @@
 }
 
 .slides img {
-    width: 100vw; 
+    width: 99vw; 
 }
 
 @keyframes slider {
@@ -782,6 +780,10 @@ iframe {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         justify-items: center;
+    }
+
+    .productos-container a {
+        width: 100%;
     }
 }
 
