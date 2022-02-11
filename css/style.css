@@ -7,7 +7,7 @@
 }
 
 .html {
-    min-width: 100vw;
+    width: fit-content;
 }
 
 /* Header Styles */
@@ -15,7 +15,6 @@
 /* Estilos logo */
 
 .header-container {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -826,6 +825,7 @@ iframe {
 
     .header-container {
         display: inline-block;
+        width: 100%;
         text-align: center;
     }
 
@@ -844,11 +844,6 @@ iframe {
     .producto {
         align-items: center;
         flex-direction: column;
-        width: 50%;
-    }
-
-    .header-container {
-        display: none;
     }
 }
 
