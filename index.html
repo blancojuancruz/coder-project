@@ -22,6 +22,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crete+Round&family=Montserrat:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ca562a3b09.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Inicio del header -->
@@ -72,21 +75,55 @@
         </section>
         
         <!-- Inicio de navegador -->
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a href="index.html" class="nav-link">Inicio</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="pages/armatupc.html" class="nav-link">Arma tu PC</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="pages/retiratucompra.html" class="nav-link">Retirá tu compra</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#envios" class="nav-link">Envios</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse main-nav" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/armatupc.html">
+                                Armá tu PC
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#envios">
+                                Envios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/retiratucompra.html">
+                                Retirá tu compra
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos especificos
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Tablets</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sillas y butacas</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Accesorios</a>
+                        </li>
+                    </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!-- Fin del navegador -->
     </header>
@@ -288,77 +325,82 @@
         </div> 
     </main>
 
-
+    <!-- Autoseleccion de productos-->
     <section class="auto-selection">
         <div class="title-cont">
             <h2 class="wow animate__animated animate__backInLeft">¿Que buscas? ¡Tenemos lo mejor para vos!</h2>
         </div>
-        <div class="grid-container">
-            <ul class="grid-ul">
-                <li class="grid-items">
+        <!-- Bootstrap Grid -->
+        <div class="grid-container container">
+            <ul class="grid-ul row row-cols-auto justify-content-md-center">
+                <li class="grid-items col">
                     <span class="span">
                         <i class="bi bi-gpu-card"></i>
                     </span>
                     <a href="#">Placas de Video</a>
                 </li>
-                <li class="grid-items">
+                <li class="grid-items col">
                     <span class="span">
                         <i class="bi bi-memory"></i>
                     </span>
                     <a href="#">Memorias RAM</a>
                 </li>
-                <li class="grid-items">
+                <li class="grid-items col">
                     <span class="span">
                         <i class="bi bi-mouse-fill"></i>
                     </span>
                     <a href="#">Perifericos</a>
                 </li>
-                <li class="grid-items">
+                <li class="grid-items col">
                     <span class="span">
                         <i class="bi bi-cpu-fill"></i>
                     </span>
                     <a href="#">Procesadores y Coolers</a>
                 </li>
-                <li class="grid-items">
+                <li class="grid-items col">
                     <span class="span">
                         <i class="bi bi-headset"></i>
                     </span>
                     <a href="#">Headsets</a>
                 </li>
-                <li class="grid-items">
-                    <span class="span">
-                        <i class="bi bi-plugin"></i>
-                    </span>
-                    <a href="#">Fuentes</a>
-                </li>
-                <li class="grid-items">
-                    <span class="span">
-                        <i class="bi bi-display-fill"></i>
-                    </span>
-                    <a href="#">Monitores</a>
-                </li>
-                <li class="grid-items">
-                    <span class="span">
-                        <i class="bi bi-motherboard"></i>
-                    </span>
-                    <a href="#">Mothers</a>
-                </li>
-                <li class="grid-items">
-                    <span class="span">
-                        <i class="bi bi-device-ssd-fill"></i>
-                    </span>
-                    <a href="#">Almacenamiento</a>
-                </li>
-                <li class="grid-items">
-                    <span class="span">
-                        <i class="fas fa-couch"></i>
-                    </span>
-                    <a href="#">Sillas</a>
-                </li>
+
+                <div class="row justify-content-md-center">
+                    <li class="grid-items col">
+                        <span class="span">
+                            <i class="bi bi-plugin"></i>
+                        </span>
+                        <a href="#">Fuentes</a>
+                    </li>
+                    <li class="grid-items col">
+                        <span class="span">
+                            <i class="bi bi-display-fill"></i>
+                        </span>
+                        <a href="#">Monitores</a>
+                    </li>
+                    <li class="grid-items col">
+                        <span class="span">
+                            <i class="bi bi-motherboard"></i>
+                        </span>
+                        <a href="#">Mothers</a>
+                    </li>
+                    <li class="grid-items col">
+                        <span class="span">
+                            <i class="bi bi-device-ssd-fill"></i>
+                        </span>
+                        <a href="#">Almacenamiento</a>
+                    </li>
+                    <li class="grid-items col">
+                        <span class="span">
+                            <i class="fas fa-couch"></i>
+                        </span>
+                        <a href="#">Sillas</a>
+                    </li>
+                </div>
             </ul>
         </div>
+        <!-- Bootstrap Grid -->
     </section>
-
+    <!-- Autoseleccion de productos -->
 
     <!-- Seccion de map para envios -->
     <section class="shipments" id="envios">

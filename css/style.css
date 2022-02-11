@@ -144,29 +144,36 @@ h2, h3, h4, h5, a, ul, ol, li {
 
 /* */
 
-.main-nav{
+.navbar {
     width: 100%;
-    display: flex;
     justify-content: center;
-    background-color: #0071bc;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-list {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     padding: .3em .9em;
     margin: 0;
-}
-
-.nav-list-item {
-    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 .nav-link {
-    color: #fff;
-    text-transform: uppercase;
+    color: #000;
 }
 
 .nav-link:hover {
@@ -344,8 +351,7 @@ h2, h3, h4, h5, a, ul, ol, li {
 /* Estilos para seccion de seleccion */
 
 .auto-selection {
-    width: 100%;
-    padding: 8rem 0;
+    padding: 5rem 0;
     text-align: center;
     background-image: url(../images/gridcover.jpg);
     background-size: cover;
@@ -353,30 +359,20 @@ h2, h3, h4, h5, a, ul, ol, li {
 
 .animate__backInLeft {
     font-family: 'Bebas neue', cursive;
-    font-size: 4.6rem;
+    font-size: 4rem;
     color: #dbdee7;
 }
 
-.grid-container {
-    margin: 2.5rem 0;
-}
-
-.grid-ul {
-    padding: 0 3rem;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    justify-items: center;
-    
+.row {
+    margin: 0;
+    padding: 0;
 }
 
 .grid-items {
     cursor: pointer;
-    margin: 1em 0;
-    width: 15em;
-    height: 15em;
+    margin: 1em 1em;
+    width: 14em;
+    height: 14em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -384,7 +380,6 @@ h2, h3, h4, h5, a, ul, ol, li {
     -webkit-border-radius: 0px 20px 20px 20px;
     -moz-border-radius: 0px 20px 20px 20px;
     background: #fff;
-    opacity: 0.8;
     border: 1px solid #000;
 }
 
@@ -760,7 +755,7 @@ iframe {
 /* Responsive */
 
 @media screen and (max-width: 1330px) {
-    .grid-ul {
+    /*.grid-ul {
         margin: 0;
         padding: 0;
         display: grid;
@@ -777,7 +772,7 @@ iframe {
 
     .auto-selection {
         background-image: none;
-    }
+    }*/
 
     .animate__backInLeft {
         color: #000;
@@ -786,16 +781,8 @@ iframe {
 
 
 @media screen and (max-width: 985px) {
-    .main-nav {
-        border: none;
-    }
-
-    .nav-list {
-        padding: .8rem;
-    }
-
     .nav-list-item {
-        font-size: .7em;
+        font-size: .5em;
     }
 
     .productos-container {
