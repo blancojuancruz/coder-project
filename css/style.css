@@ -8,6 +8,8 @@
 
 .html {
     width: fit-content;
+    min-width: 100%;
+    scroll-behavior: smooth;
 }
 
 /* Header Styles */
@@ -506,6 +508,7 @@ iframe {
 .image-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .image-amd {
