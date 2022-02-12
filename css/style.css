@@ -318,14 +318,14 @@ h2, h3, h4, h5, a, ul, ol, li {
 .add-cart button {
     font-family: 'Montserrat', serif;
     color: #fff;
-    background: #015d9b;
+    background: #0d6efd;
     padding: .4em 1em;
     border-radius: 5px;
     border: none;
 }
 
 .add-cart button:hover {
-    background: #012842;
+    background: #0b5ed7;
     letter-spacing: 1px;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0,57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0,57);
@@ -580,6 +580,11 @@ iframe {
     top: -6px;
 }
 
+.carrousel {
+    padding: 5rem;
+    background-color: #e8e8ed;
+}
+
 
 /* AMD */
 
@@ -741,25 +746,6 @@ iframe {
 /* Responsive */
 
 @media screen and (max-width: 1330px) {
-    /*.grid-ul {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(10, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        justify-items: center;
-    }
-
-    .grid-items {
-        width: 60%;
-    }
-
-    .auto-selection {
-        background-image: none;
-    }*/
-
     .animate__backInLeft {
         color: #000;
     }
@@ -817,19 +803,9 @@ iframe {
     .slider-container {
         display: none;
     }
-    
-    .social-buttons, .contacto {
-        display: none;
-    }
-
-    .header-container {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
 
     .search {
-        width: 100%;
+        display: none;
     }
 
 }
