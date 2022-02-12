@@ -162,7 +162,7 @@ h2, h3, h4, h5, a, ul, ol, li {
     color: #000;
 }
 
-.nav-link:hover {
+.nav-link__hover:hover {
     color: #000;
     border-bottom: .1rem solid #000;
     padding-bottom: .1em;
