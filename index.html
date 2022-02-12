@@ -65,12 +65,134 @@
             </div>
 
             <div class="contacto">
-                <span class="span">
-                    <div class="ring">
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-primary" id="exampleModalToggleLabel">Ingresar</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label text-dark">Usuario</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">
+                                                Nunca compartiremos tus datos con nadie.
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label text-dark">Contraseña</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label text-dark" for="exampleCheck1">Acepto terminos y condiciones</label>
+                                        </div>
+                                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrarme</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-primary" id="exampleModalToggleLabel2">
+                                                Registrarme
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom01" class="form-label text-dark">
+                                                    Nombre
+                                                </label>
+                                                <input type="text" class="form-control" id="validationCustom01" required>
+                                                <div class="invalid-feedback">
+                                                    Ingrese su nombre
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom02" class="form-label text-dark">
+                                                    Apellido
+                                                </label>
+                                                <input type="text" class="form-control" id="validationCustom02" required>
+                                                <div class="invalid-feedback">
+                                                    Ingrese su apellido
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustomUsername" class="form-label text-dark">
+                                                    Usuario
+                                                </label>
+                                                <div class="input-group has-validation">
+                                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                                    <div class="invalid-feedback">
+                                                        Por favor ingrese un usuario.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom03" class="form-label text-dark">
+                                                    Ciudad
+                                                </label>
+                                                <input type="text" class="form-control" id="validationCustom03" required>
+                                                <div class="invalid-feedback">
+                                                    Por favor ingrese una ciudad valida.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom04" class="form-label text-dark">
+                                                    Pais
+                                                </label>
+                                                <select class="form-select" id="validationCustom04" required>
+                                                    <option selected disabled value="">
+                                                        Pais
+                                                    </option>
+                                                    <option>
+                                                        Argentina
+                                                    </option>
+                                                    <option>
+                                                        Colombia
+                                                    </option>
+                                                    <option>
+                                                        Uruguay
+                                                    </option>
+                                                    <option>
+                                                        Paraguay
+                                                    </option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Por favor seleccione un pais valido
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary" type="submit">Registrarme</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ya estoy registrado</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary log__in" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Ingresar</a>
+                
+                <div class="personal-contact">   
+                    <span class="span">
                         <i class="bi bi-telephone-inbound-fill"></i>
-                    </div>
-                    <label for="text">1121755044</label>
-                </span>
+                        <label for="text">1121755044</label>
+                    </span>
+                </div>
             </div>
         </section>
         
