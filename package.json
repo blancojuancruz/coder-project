@@ -1,0 +1,23 @@
+{
+  "name": "coder-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blancojuancruz/coder-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blancojuancruz/coder-project/issues"
+  },
+  "homepage": "https://github.com/blancojuancruz/coder-project#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

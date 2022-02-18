@@ -1,0 +1,102 @@
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 38, 46);
+
+        .search {
+            width: 25%;
+            position: relative;
+        }
+
+            .search input {
+                font-family: 'Nunito', sans-serif;
+                position: relative;
+                width: 100%;
+                border: 2px solid #aaa;
+                border-radius: 4px;
+                margin: .5em 0;
+                outline: none;
+                padding: .5em;
+                box-sizing: border-box;
+                transition: .3s;
+
+                &:focus {
+                    border: 2px solid #0071bc;
+                    transition: .3s;
+                }
+            }
+
+                .search-icon {
+                    position: absolute;
+                    right: 10px;
+                    top: 18px;
+                    color: #000;
+                }
+
+                    .social-buttons {
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 15%;
+                    }
+
+                        .bouncy {
+                            animation: bouncy 5s infinite linear;
+                            position: relative;
+                        }
+
+                        @keyframes bouncy {
+                            0% {top:0em}
+                            40% {top:0em}
+                            43% {top:-0.9em}
+                            46% {top:0em}
+                            48% {top:-0.4em}
+                            50% {top:0em}
+                            100% {top:0em;}
+                        }
+
+                            .social-buttons a {
+                                color: #fff;
+                                font-size: 1.3em; 
+                            }
+
+                                .social-button--instagram:hover {
+                                    color: #C13584;
+                                }
+
+                                    .social-button--linkedin:hover {
+                                        color: rgb(10 102 194);
+                                    }
+                                
+                                        .social-button--twitter:hover {
+                                            color: #1d9bf0;
+                                        }
+                                
+                                            .social-button--twitch:hover {
+                                                color: #a970ff;
+                                            }
+                                
+                                                .log__in {
+                                                    margin: 0 .4em 0 0;
+                                                }
+                                
+                                                    .contacto {
+                                                        font-family: 'Roboto', sans-serif;
+                                                        display: flex;
+                                                        padding: 1em;
+                                                    }
+                                
+                                                        .contacto span, label {
+                                                            color: #fff;
+                                                            margin: 0 .3em;
+                                                        }
+                                
+                                                            .personal-contact {
+                                                                display: flex;
+                                                                align-items: center;
+                                                            }
+}
+
+
+

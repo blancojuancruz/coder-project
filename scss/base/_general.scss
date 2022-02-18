@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none; 
+} 
+
+.html {
+    width: fit-content;
+    min-width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h2, h3, h4, h5, a, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    text-decoration: none;
+}
