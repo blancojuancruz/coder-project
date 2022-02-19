@@ -631,4 +631,16 @@ main .first-items img {
   color: #0b5ed7;
 }
 
+.processors-container {
+  margin: 1rem 0.5rem;
+  border: 3px outset #fff;
+  padding: 1em 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  background-color: #c7c4c4;
+}
+.processors-container .parraf {
+  color: #5050da;
+}
+
 /*# sourceMappingURL=style.css.map */
