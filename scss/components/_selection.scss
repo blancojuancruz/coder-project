@@ -8,6 +8,10 @@
             font-family: 'Bebas neue', cursive;
             font-size: 4rem;
             color: #dbdee7;
+
+            @media screen and (max-width: 1330px) {
+                color: #000;
+            }
         }
     
             .row {

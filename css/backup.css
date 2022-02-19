@@ -482,6 +482,9 @@ iframe {
 
 /* Final de estilos para index.html */
 
+
+
+
 /* Estilos para armatupc.html */
 
 .arma-tupc h1 {
@@ -605,7 +608,6 @@ iframe {
 
 
 /* Estilos para retira tu compra */
-
 .compras {
     display: inline-block;
     width: 100%;
@@ -629,7 +631,6 @@ iframe {
 .pasos li {
     font-size: 2rem;
 }
-
 /* Fin estilos para retira tu compra */
 
 
@@ -742,10 +743,6 @@ iframe {
 
 
 @media screen and (max-width: 985px) {
-    .nav-list-item {
-        font-size: .5em;
-    }
-
     .productos-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -761,10 +758,6 @@ iframe {
 }
 
 @media screen and (max-width: 1138px) {
-    .nav-list {
-        width: 100%;
-    }
-
     .left-banner, .right-banner {
         display: none;
     }
@@ -781,10 +774,6 @@ iframe {
     
     .title__container {
         align-items: center;
-    }
-
-    .title__container p {
-        text-align: center;
     }
 }
 

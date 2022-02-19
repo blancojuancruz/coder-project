@@ -55,11 +55,21 @@ main {
                                         grid-row-gap: 0px;
                                         justify-items: center;
                                         margin: 3rem;
+
+                                        @media screen and (max-width: 1138px) {
+                                            display: flex;
+                                            flex-direction: column;
+                                        }
                                     }
     
                                         .contain {
                                             padding: 2rem;
                                             display: flex;
+
+                                            @media screen and (max-width: 1138px) {
+                                                flex-direction: column;
+                                                align-items: center;
+                                            }
                                         }
     
                                             .title__container {
@@ -68,6 +78,10 @@ main {
                                                 justify-content: space-around;
                                                 font-family: 'Montserrat', sans-serif;
                                                 padding: 1rem;
+
+                                                @media screen and (max-width: 1138px) {
+                                                    align-items: center;
+                                                }
                                             }
     
                                                 .box-cont {

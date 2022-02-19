@@ -4,6 +4,10 @@
 
     .banner {
         margin: 2rem;
+
+        @media screen and (max-width: 1138px) {
+            display: none;
+        }
     }
 
         .banner img {
@@ -15,12 +19,30 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+
+                @media screen and (max-width: 985px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(4, 1fr);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    justify-items: center;
+                }
+
+                @media screen and (max-width: 500px) {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
     
                 .productos-container a {
                     display: inline-block;
                     width: 75%;
                     color: #000;
+
+                    @media screen and (max-width: 985px) {
+                        width: 100%;
+                    }
                 }
     
                     .producto {
@@ -31,6 +53,11 @@
                         box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
                         top: -6px;
                         font-family: 'Montserrat', serif;
+
+                        @media screen and (max-width: 500px) {
+                            align-items: center;
+                            flex-direction: column;
+                        }
                     }
     
                         .contenido-principal {
