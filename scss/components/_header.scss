@@ -56,25 +56,40 @@
                             100% {top:0em;}
                         }
 
-                            .social-buttons a {
-                                color: #fff;
-                                font-size: 1.3em; 
-                            }
+                                .social-button--instagram {
+                                    color: #fff;
+                                    font-size: 1.3em; 
 
-                                .social-button--instagram:hover {
-                                    color: #C13584;
+                                    &:hover {
+                                        color: #C13584;
+                                    }
                                 }
 
-                                    .social-button--linkedin:hover {
-                                        color: rgb(10 102 194);
+                                    .social-button--linkedin {
+                                        color: #fff;
+                                        font-size: 1.3em;
+
+                                        &:hover {
+                                            color: rgb(10 102 194);
+                                        }
                                     }
                                 
-                                        .social-button--twitter:hover {
-                                            color: #1d9bf0;
+                                        .social-button--twitter {
+                                            color: #fff;
+                                            font-size: 1.3em;
+                                            
+                                            &:hover {
+                                                color: #1d9bf0;
+                                            }
                                         }
                                 
-                                            .social-button--twitch:hover {
-                                                color: #a970ff;
+                                            .social-button--twitch {
+                                                color: #fff;
+                                                font-size: 1.3em;
+                                                
+                                                &:hover {
+                                                    color: #a970ff;
+                                                }
                                             }
                                 
                                                 .log__in {
@@ -97,6 +112,3 @@
                                                                 align-items: center;
                                                             }
 }
-
-
-

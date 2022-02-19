@@ -1,0 +1,48 @@
+.auto-selection {
+    padding: 5rem 0;
+    text-align: center;
+    background-image: url(../images/gridcover.jpg);
+    background-size: cover;
+
+        .animate__backInLeft {
+            font-family: 'Bebas neue', cursive;
+            font-size: 4rem;
+            color: #dbdee7;
+        }
+    
+            .row {
+                margin: 0;
+                padding: 0;
+            }
+    
+                .grid-items {
+                    cursor: pointer;
+                    margin: 1em 1em;
+                    width: 14em;
+                    height: 14em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    border-radius: 0px 20px 20px 20px;
+                    -webkit-border-radius: 0px 20px 20px 20px;
+                    -moz-border-radius: 0px 20px 20px 20px;
+                    background: #fff;
+                    border: 1px solid #000;
+        
+                    &:hover {
+                        transform: scale(1.2) translate(1px,0);
+                        -webkit-transform: scale(1.2) translate(1px,0);
+                        -moz-transform: scale(1.2) translate(1px,-6px);
+                        transition: .7s;
+                    }
+                }
+        
+                        .grid-items a {
+                            font-family: 'Crete Round', sans-serif;
+                            color: rgb(16, 26, 48);
+                        }
+        
+                            .grid-items span i {
+                                font-size: 3rem;
+                            }
+}

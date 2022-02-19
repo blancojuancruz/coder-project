@@ -1,0 +1,71 @@
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(38, 38, 46);
+    font-family: 'Montserrat', serif;
+    color: #fff;
+    bottom: 0;
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 13rem;
+        }
+        
+            .logo-footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        
+                .contact-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+        
+                    .social-btns__footer {
+                        display: flex;
+                        width: 50%;
+                        justify-content: space-evenly;
+                    }
+        
+                        .social-button--instagram {
+                            color: #fff;
+                            font-size: 1.3em; 
+
+                            &:hover {
+                                color: #C13584;
+                            }
+                        }
+
+                            .social-button--linkedin {
+                                color: #fff;
+                                font-size: 1.3em;
+
+                                &:hover {
+                                    color: rgb(10 102 194);
+                                }
+                            }
+                        
+                                .social-button--twitter {
+                                    color: #fff;
+                                    font-size: 1.3em;
+                                    
+                                    &:hover {
+                                        color: #1d9bf0;
+                                    }
+                                }
+                        
+                                    .social-button--twitch {
+                                        color: #fff;
+                                        font-size: 1.3em;
+                                        
+                                        &:hover {
+                                            color: #a970ff;
+                                        }
+                                    }
+}

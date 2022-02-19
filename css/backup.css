@@ -124,8 +124,6 @@ h2, h3, h4, h5, a, ul, ol, li {
     align-items: center;
 }
 
-
-
 /* */
 
 .navbar {
@@ -250,25 +248,16 @@ h2, h3, h4, h5, a, ul, ol, li {
 
 /* Estilos banners */
 
+.banner {
+    margin: 2rem;
+}
+
+.banner img {
+    position: sticky;
+    top: 0;
+}
+
 /* Fin estilos banner */
-
-.left-banner {
-    margin: 2rem;
-}
-
-.right-banner {
-    margin: 2rem;
-}
-
-.left-banner img {
-    position: sticky;
-    top: 0;
-}
-
-.right-banner img {
-    position: sticky;
-    top: 0;
-}
 
 /* Estilos productos */
 

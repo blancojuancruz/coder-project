@@ -85,18 +85,30 @@ h2, h3, h4, h5, a, ul, ol, li {
     top: 0em;
   }
 }
-.header-container .social-buttons a {
+.header-container .social-button--instagram {
   color: #fff;
   font-size: 1.3em;
 }
 .header-container .social-button--instagram:hover {
   color: #C13584;
 }
+.header-container .social-button--linkedin {
+  color: #fff;
+  font-size: 1.3em;
+}
 .header-container .social-button--linkedin:hover {
   color: #0a66c2;
 }
+.header-container .social-button--twitter {
+  color: #fff;
+  font-size: 1.3em;
+}
 .header-container .social-button--twitter:hover {
   color: #1d9bf0;
+}
+.header-container .social-button--twitch {
+  color: #fff;
+  font-size: 1.3em;
 }
 .header-container .social-button--twitch:hover {
   color: #a970ff;
@@ -152,6 +164,273 @@ h2, h3, h4, h5, a, ul, ol, li {
   border-bottom: 0.1rem solid #000;
   padding-bottom: 0.2em;
   transition: 0.4s;
+}
+
+.slider-container {
+  overflow: hidden;
+  max-width: 100vw;
+  position: relative;
+}
+.slider-container .slides {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slider 18s infinite alternate;
+  animation-timing-function: ease-out;
+}
+.slider-container .slides img {
+  width: 100vw;
+}
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.slider-container .slider-pad {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+}
+.slider-container .ol-slider li {
+  border-radius: 50%;
+  background-color: #0071bc;
+}
+.slider-container .ol-slider {
+  display: flex;
+  justify-content: center;
+}
+.slider-container .ol-slider li {
+  width: 0.8em;
+  height: 0.8em;
+  margin: 0.2em;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+}
+.slider-container .ol-slider li:hover {
+  background: #0071bc;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+}
+.main-section .banner {
+  margin: 2rem;
+}
+.main-section .banner img {
+  position: sticky;
+  top: 0;
+}
+.main-section .productos-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main-section .productos-container a {
+  display: inline-block;
+  width: 75%;
+  color: #000;
+}
+.main-section .producto {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: 0.5em;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.33);
+  top: -6px;
+  font-family: "Montserrat", serif;
+}
+.main-section .contenido-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1em;
+}
+.main-section .titulo {
+  font-size: 1.4em;
+  font-weight: 20px;
+}
+.main-section .price {
+  align-self: flex-start;
+}
+.main-section .add-cart {
+  align-self: center;
+}
+.main-section .add-cart button {
+  font-family: "Montserrat", serif;
+  color: #fff;
+  background: #0d6efd;
+  padding: 0.4em 1em;
+  border-radius: 5px;
+  border: none;
+}
+.main-section .add-cart button:hover {
+  background: #0b5ed7;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px black;
+  -moz-box-shadow: 0px 5px 40px -10px black;
+  box-shadow: 5px 40px -10px black;
+}
+
+.auto-selection {
+  padding: 5rem 0;
+  text-align: center;
+  background-image: url(../images/gridcover.jpg);
+  background-size: cover;
+}
+.auto-selection .animate__backInLeft {
+  font-family: "Bebas neue", cursive;
+  font-size: 4rem;
+  color: #dbdee7;
+}
+.auto-selection .row {
+  margin: 0;
+  padding: 0;
+}
+.auto-selection .grid-items {
+  cursor: pointer;
+  margin: 1em 1em;
+  width: 14em;
+  height: 14em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 0px 20px 20px 20px;
+  -webkit-border-radius: 0px 20px 20px 20px;
+  -moz-border-radius: 0px 20px 20px 20px;
+  background: #fff;
+  border: 1px solid #000;
+}
+.auto-selection .grid-items:hover {
+  transform: scale(1.2) translate(1px, 0);
+  -webkit-transform: scale(1.2) translate(1px, 0);
+  -moz-transform: scale(1.2) translate(1px, -6px);
+  transition: 0.7s;
+}
+.auto-selection .grid-items a {
+  font-family: "Crete Round", sans-serif;
+  color: #101a30;
+}
+.auto-selection .grid-items span i {
+  font-size: 3rem;
+}
+
+.shipments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+.shipments .shipments-input {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 2rem;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5em;
+  transition: 0.3s;
+}
+.shipments .shipments-input:focus {
+  border: 2px solid #012842;
+}
+.shipments .btn-primary {
+  width: 100%;
+  margin-top: 1rem;
+}
+.shipments .shipments-tittle {
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+}
+.shipments iframe {
+  margin-top: 3em;
+  width: 34.751em;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #26262e;
+  font-family: "Montserrat", serif;
+  color: #fff;
+  bottom: 0;
+}
+.main-footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 13rem;
+}
+.main-footer .logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-footer .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-footer .social-btns__footer {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.main-footer .social-button--instagram {
+  color: #fff;
+  font-size: 1.3em;
+}
+.main-footer .social-button--instagram:hover {
+  color: #C13584;
+}
+.main-footer .social-button--linkedin {
+  color: #fff;
+  font-size: 1.3em;
+}
+.main-footer .social-button--linkedin:hover {
+  color: #0a66c2;
+}
+.main-footer .social-button--twitter {
+  color: #fff;
+  font-size: 1.3em;
+}
+.main-footer .social-button--twitter:hover {
+  color: #1d9bf0;
+}
+.main-footer .social-button--twitch {
+  color: #fff;
+  font-size: 1.3em;
+}
+.main-footer .social-button--twitch:hover {
+  color: #a970ff;
 }
 
 /*# sourceMappingURL=style.css.map */
