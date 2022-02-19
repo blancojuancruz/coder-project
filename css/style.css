@@ -290,9 +290,6 @@ h2, h3, h4, h5, a, ul, ol, li {
 .main-section .add-cart button:hover {
   background: #0b5ed7;
   letter-spacing: 1px;
-  -webkit-box-shadow: 0px 5px 40px -10px black;
-  -moz-box-shadow: 0px 5px 40px -10px black;
-  box-shadow: 5px 40px -10px black;
 }
 
 .auto-selection {
@@ -431,6 +428,102 @@ h2, h3, h4, h5, a, ul, ol, li {
 }
 .main-footer .social-button--twitch:hover {
   color: #a970ff;
+}
+
+main .arma-tupc h1 {
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+main .guia {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+main .image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .image-amd {
+  margin: 1em;
+  padding: 2em;
+  background-image: url(../images/back_amd.png);
+}
+main .image-intel {
+  margin: 1em;
+  padding: 2em;
+  background-image: url(../images/back_intel.png);
+}
+main .image-container img {
+  padding: 2em;
+}
+main .presentation-title {
+  padding: 1.4em 0 1em 0;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+}
+main .img__container img {
+  width: 10em;
+  height: 10em;
+}
+main .intel-description, main .amd-description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  margin: 3rem;
+}
+main .contain {
+  padding: 2rem;
+  display: flex;
+}
+main .title__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+}
+main .box-cont {
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  top: 0;
+}
+main .box-cont:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.33);
+  top: -6px;
+}
+main .carrousel {
+  padding: 5rem;
+  background-color: #e8e8ed;
+}
+main .main-armado {
+  display: flex;
+}
+main .armado {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2.4em;
+  border: 2px solid #0071bc;
+}
+main .first-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+main .first-items img {
+  margin-top: 3rem;
+  border: 3px solid #000;
+  border-radius: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

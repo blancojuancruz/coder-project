@@ -1,0 +1,115 @@
+main {
+    .arma-tupc h1 {
+        font-family: 'Roboto', sans-serif;
+        margin: 1rem 0 2rem 0;
+        text-align: center;
+    }
+    
+        .guia {
+            display: flex;
+            justify-content: center;
+            margin: 3rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+        }
+    
+            .image-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+    
+                .image-amd {
+                    margin: 1em;
+                    padding: 2em;
+                    background-image: url(../images/back_amd.png);
+                }
+    
+                    .image-intel {
+                        margin: 1em;
+                        padding: 2em;
+                        background-image: url(../images/back_intel.png);
+                    }
+    
+                        .image-container img {
+                            padding: 2em;
+                        }
+    
+                            .presentation-title {
+                                padding: 1.4em 0 1em 0;
+                                text-align: center;
+                                font-family: 'Nunito', sans-serif;
+                                font-size: 1.6em;
+                            }
+    
+                                .img__container img {
+                                    width: 10em;
+                                    height: 10em;
+                                }
+    
+                                    .intel-description, .amd-description {
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        grid-template-rows: repeat(2, 1fr);
+                                        grid-column-gap: 0px;
+                                        grid-row-gap: 0px;
+                                        justify-items: center;
+                                        margin: 3rem;
+                                    }
+    
+                                        .contain {
+                                            padding: 2rem;
+                                            display: flex;
+                                        }
+    
+                                            .title__container {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-around;
+                                                font-family: 'Montserrat', sans-serif;
+                                                padding: 1rem;
+                                            }
+    
+                                                .box-cont {
+                                                    border-radius: 4px;
+                                                    transition: all 0.2s ease-out;
+                                                    position: relative;
+                                                    overflow: hidden;
+                                                    cursor: pointer;
+                                                    top:0
+                                                }
+    
+                                                    .box-cont:hover{
+                                                        box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+                                                        top: -6px;
+                                                    }
+    
+                                                        .carrousel {
+                                                            padding: 5rem;
+                                                            background-color: #e8e8ed;
+                                                        }
+
+    
+                                                            .main-armado {
+                                                                display: flex;
+                                                            }
+    
+                                                                .armado {
+                                                                    display: flex;
+                                                                    justify-content: flex-start;
+                                                                    margin: 2.4em;
+                                                                    border: 2px solid #0071bc;
+                                                                }
+    
+                                                                    .first-items {
+                                                                        display: flex;
+                                                                        width: 100%;
+                                                                        justify-content: space-around;
+                                                                    }
+    
+                                                                        .first-items img {
+                                                                            margin-top: 3rem;
+                                                                            border: 3px solid #000;
+                                                                            border-radius: 10%;
+                                                                        }
+}
