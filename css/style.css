@@ -13,7 +13,7 @@
   overflow-x: hidden;
 }
 
-h2, h3, h4, h5, a, ul, ol, li {
+h2, h3, h4, h5, a, ul, ol, li, p {
   margin: 0;
   padding: 0;
   font-size: 1rem;
@@ -524,6 +524,47 @@ main .first-items img {
   margin-top: 3rem;
   border: 3px solid #000;
   border-radius: 10%;
+}
+
+.retirar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.8rem 0;
+}
+.retirar-header .image-retirar__container {
+  width: 420px;
+  height: 250px;
+}
+.retirar-header .retirar-tittle {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.retirar-header .retirar-p {
+  font-size: 1.2em;
+  font-family: "Nunito", sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+.steps .steps-tittle {
+  margin: 0.5em 0;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  color: #0b5ed7;
+}
+.steps .list-group-item {
+  margin: 1.2em 0;
+}
+.steps .fw-bold {
+  text-align: center;
+  padding-bottom: 0.2em;
+  color: #0b5ed7;
 }
 
 /*# sourceMappingURL=style.css.map */
