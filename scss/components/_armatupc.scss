@@ -1,3 +1,5 @@
+@import '../base/maps.scss';
+
 main {
     .arma-tupc h1 {
         font-family: 'Roboto', sans-serif;
@@ -6,17 +8,17 @@ main {
     }
     
         .guia {
-            display: flex;
-            justify-content: center;
+            display: map-get($flexbox, dspl);
+            justify-content: map-get($flexbox, contentcenter);
             margin: 3rem;
             font-family: 'Roboto', sans-serif;
             font-size: 1.5em;
         }
     
             .image-container {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
+                display: map-get($flexbox, dspl);
+                justify-content: map-get($flexbox, contentcenter);
+                flex-wrap: map-get($flexbox, flw);
             }
     
                 .image-amd {
@@ -57,25 +59,25 @@ main {
                                         margin: 3rem;
 
                                         @media screen and (max-width: 1138px) {
-                                            display: flex;
-                                            flex-direction: column;
+                                            display: map-get($flexbox, dspl);
+                                            flex-direction: map-get($flexbox, directioncolumn);
                                         }
                                     }
     
                                         .contain {
                                             padding: 2rem;
-                                            display: flex;
+                                            display: map-get($flexbox, dspl);
 
                                             @media screen and (max-width: 1138px) {
-                                                flex-direction: column;
-                                                align-items: center;
+                                                flex-direction: map-get($flexbox, directioncolumn);
+                                                align-items: map-get($flexbox, algitems);
                                             }
                                         }
     
                                             .title__container {
-                                                display: flex;
-                                                flex-direction: column;
-                                                justify-content: space-around;
+                                                display: map-get($flexbox, dspl);
+                                                flex-direction: map-get($flexbox, directioncolumn);
+                                                justify-content: map-get($flexbox, contentaround);
                                                 font-family: 'Montserrat', sans-serif;
                                                 padding: 1rem;
 
@@ -105,20 +107,20 @@ main {
 
     
                                                             .main-armado {
-                                                                display: flex;
+                                                                display: map-get($flexbox, dspl);
                                                             }
     
                                                                 .armado {
-                                                                    display: flex;
-                                                                    justify-content: flex-start;
+                                                                    display: map-get($flexbox, dspl);
+                                                                    justify-content: map-get($flexbox, contentstart);
                                                                     margin: 2.4em;
                                                                     border: 2px solid #0071bc;
                                                                 }
     
                                                                     .first-items {
-                                                                        display: flex;
+                                                                        display: map-get($flexbox, dspl);
                                                                         width: 100%;
-                                                                        justify-content: space-around;
+                                                                        justify-content: map-get($flexbox, contentaround);
                                                                     }
     
                                                                         .first-items img {

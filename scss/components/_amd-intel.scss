@@ -1,12 +1,13 @@
 .processors-container {
     margin: 1rem .5rem;
-    border: 3px outset #fff;
+    border: 8px inset rgba(28,110,164,0.52);
+    border-radius: 6px;
     padding: 1em 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
-    background-color: rgb(199, 196, 196);
+    background-color: #49678d;
 
         .parraf {
-            color: rgb(80, 80, 218);
+            color: #fff;
         }
 }

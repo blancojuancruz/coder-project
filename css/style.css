@@ -63,6 +63,11 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   justify-content: space-evenly;
   width: 15%;
 }
+@media screen and (max-width: 500px) {
+  .header-container .social-buttons {
+    display: none;
+  }
+}
 .header-container .bouncy {
   animation: bouncy 5s infinite linear;
   position: relative;
@@ -316,7 +321,7 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   font-weight: 20px;
 }
 .main-section .price {
-  align-self: flex-start;
+  align-self: start;
 }
 .main-section .add-cart {
   align-self: center;
@@ -424,6 +429,12 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   font-family: "Montserrat", serif;
   color: #fff;
   bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .main-footer .contact {
   display: flex;
@@ -633,14 +644,15 @@ main .first-items img {
 
 .processors-container {
   margin: 1rem 0.5rem;
-  border: 3px outset #fff;
+  border: 8px inset rgba(28, 110, 164, 0.52);
+  border-radius: 6px;
   padding: 1em 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
-  background-color: #c7c4c4;
+  background-color: #49678d;
 }
 .processors-container .parraf {
-  color: #5050da;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

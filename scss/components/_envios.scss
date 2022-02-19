@@ -1,8 +1,10 @@
+@import '../base/maps.scss';
+
 .shipments {
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: map-get($flexbox, dspl);
+    align-items: map-get($flexbox, algitems);
+    flex-direction: map-get($flexbox, directioncolumn);
     padding: 2rem 0;
     margin: 2rem 0;
 

@@ -1,6 +1,8 @@
+@import '../base/maps.scss';
+
 .main-section {
-    display: flex;
-    justify-content: center;
+    display: map-get($flexbox, dspl);
+    justify-content: map-get($flexbox, contentcenter);
 
     .banner {
         margin: 2rem;
@@ -16,9 +18,9 @@
         }
     
             .productos-container {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
+                display: map-get($flexbox, dspl);
+                align-items: map-get($flexbox, algitems);
+                flex-direction: map-get($flexbox, directioncolumn);
 
                 @media screen and (max-width: 985px) {
                     display: grid;
@@ -30,8 +32,8 @@
                 }
 
                 @media screen and (max-width: 500px) {
-                    display: flex;
-                    flex-direction: column;
+                    display: map-get($flexbox, dspl);
+                    flex-direction: map-get($flexbox, directioncolumn);
                 }
             }
     
@@ -46,7 +48,7 @@
                 }
     
                     .producto {
-                        display: flex;
+                        display: map-get($flexbox, dspl);
                         justify-content: center;
                         margin: 1rem;
                         padding: .5em;
@@ -55,15 +57,15 @@
                         font-family: 'Montserrat', serif;
 
                         @media screen and (max-width: 500px) {
-                            align-items: center;
-                            flex-direction: column;
+                            align-items: map-get($flexbox, algitems);
+                            flex-direction: map-get($flexbox, directioncolumn);
                         }
                     }
     
                         .contenido-principal {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
+                            display: map-get($flexbox, dspl);
+                            flex-direction: map-get($flexbox, directioncolumn);
+                            justify-content: map-get($flexbox, contentbetween);
                             margin: 0 1em;
                         }
     
@@ -74,7 +76,7 @@
                             }
     
                                 .price {
-                                    align-self: flex-start;
+                                    align-self: map-get($flexbox, algselfstart);
                                 }
     
                                     .add-cart {

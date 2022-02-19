@@ -1,8 +1,10 @@
+@import '../base/maps.scss';
+
 .header-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display: map-get($flexbox, dspl);
+    flex-wrap: map-get($flexbox, flw);
+    justify-content: map-get($flexbox, contentaround);
+    align-items: map-get($flexbox, algitems);
     background-color: rgb(38, 38, 46);
 
         .search {
@@ -40,9 +42,13 @@
                 }
 
                     .social-buttons {
-                        display: flex;
-                        justify-content: space-evenly;
+                        display: map-get($flexbox, dspl);
+                        justify-content: map-get($flexbox, contentevenly);
                         width: 15%;
+
+                        @media screen and (max-width: 500px) {
+                            display: none;
+                        }
                     }
 
                         .bouncy {
@@ -102,7 +108,7 @@
                                 
                                                     .contacto {
                                                         font-family: 'Roboto', sans-serif;
-                                                        display: flex;
+                                                        display: map-get($flexbox, dspl);
                                                         padding: 1em;
                                                     }
                                 
@@ -112,7 +118,7 @@
                                                         }
                                 
                                                             .personal-contact {
-                                                                display: flex;
-                                                                align-items: center;
+                                                                display: map-get($flexbox, dspl);
+                                                                align-items: map-get($flexbox, algitems);
                                                             }
 }

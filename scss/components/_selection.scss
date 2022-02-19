@@ -1,3 +1,5 @@
+@import '../base/maps.scss';
+
 .auto-selection {
     padding: 5rem 0;
     text-align: center;
@@ -24,9 +26,9 @@
                     margin: 1em 1em;
                     width: 14em;
                     height: 14em;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
+                    display: map-get($flexbox, dspl);
+                    flex-direction: map-get($flexbox, directioncolumn);
+                    justify-content: map-get($flexbox, contentevenly);
                     border-radius: 0px 20px 20px 20px;
                     -webkit-border-radius: 0px 20px 20px 20px;
                     -moz-border-radius: 0px 20px 20px 20px;

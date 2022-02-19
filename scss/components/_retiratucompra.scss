@@ -1,7 +1,9 @@
+@import '../base/maps.scss';
+
 .retirar-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: map-get($flexbox, dspl);
+    flex-direction: map-get($flexbox, directioncolumn);
+    align-items: map-get($flexbox, algitems);
     margin: 1.8rem 0;
     
         .image-retirar__container{
@@ -23,8 +25,8 @@
 }
 
 .steps {
-    display: flex;
-    flex-direction: column;
+    display: map-get($flexbox, dspl);
+    flex-direction: map-get($flexbox, directioncolumn);
 
         .steps-tittle {
             margin: .5em 0;
