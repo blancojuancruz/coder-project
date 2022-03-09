@@ -22,15 +22,6 @@
                 align-items: map-get($flexbox, algitems);
                 flex-direction: map-get($flexbox, directioncolumn);
 
-                @media screen and (max-width: 985px) {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: repeat(4, 1fr);
-                    grid-column-gap: 0px;
-                    grid-row-gap: 0px;
-                    justify-items: center;
-                }
-
                 @media screen and (max-width: 500px) {
                     display: map-get($flexbox, dspl);
                     flex-direction: map-get($flexbox, directioncolumn);
@@ -48,6 +39,7 @@
                 }
     
                     .producto {
+                        width: 90%;
                         display: map-get($flexbox, dspl);
                         justify-content: center;
                         margin: 1rem;

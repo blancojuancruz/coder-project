@@ -2,123 +2,133 @@
 
 .header-container {
     display: map-get($flexbox, dspl);
-    flex-wrap: map-get($flexbox, flw);
     justify-content: map-get($flexbox, contentaround);
     align-items: map-get($flexbox, algitems);
     background-color: rgb(38, 38, 46);
+
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
 
         .search {
             width: 25%;
             position: relative;
 
-            @media screen and (max-width: 730px) {
-                display: none;
+            @media screen and (max-width: 991px) {
+                width: 90%;
             }
         }
 
-            .search input {
-                font-family: 'Nunito', sans-serif;
-                position: relative;
-                width: 100%;
-                border: 2px solid #aaa;
-                border-radius: 4px;
-                margin: .5em 0;
-                outline: none;
-                padding: .5em;
-                box-sizing: border-box;
-                transition: .3s;
-
-                &:focus {
-                    border: 2px solid #0071bc;
-                    transition: .3s;
+            .logo-container {
+                @media screen and (max-width: 991px) {
+                    display: none;
                 }
             }
 
-                .search-icon {
-                    position: absolute;
-                    right: 10px;
-                    top: 18px;
-                    color: #000;
+                .search input {
+                    font-family: 'Nunito', sans-serif;
+                    position: relative;
+                    width: 100%;
+                    border: 2px solid #aaa;
+                    border-radius: 4px;
+                    margin: .5em 0;
+                    outline: none;
+                    padding: .5em;
+                    box-sizing: border-box;
+                    transition: .3s;
+
+                    &:focus {
+                        border: 2px solid #0071bc;
+                        transition: .3s;
+                    }
                 }
 
-                    .social-buttons {
-                        display: map-get($flexbox, dspl);
-                        justify-content: map-get($flexbox, contentevenly);
-                        width: 15%;
-
-                        @media screen and (max-width: 500px) {
-                            display: none;
-                        }
+                    .search-icon {
+                        position: absolute;
+                        right: 10px;
+                        top: 18px;
+                        color: #000;
                     }
 
-                        .bouncy {
-                            animation: bouncy 5s infinite linear;
-                            position: relative;
+                        .social-buttons {
+                            display: map-get($flexbox, dspl);
+                            justify-content: map-get($flexbox, contentevenly);
+                            width: 15%;
+
+                            @media screen and (max-width: 991px) {
+                                width: 50%;
+                            }
                         }
 
-                        @keyframes bouncy {
-                            0% {top:0em}
-                            40% {top:0em}
-                            43% {top:-0.9em}
-                            46% {top:0em}
-                            48% {top:-0.4em}
-                            50% {top:0em}
-                            100% {top:0em;}
-                        }
+                            .bouncy {
+                                animation: bouncy 5s infinite linear;
+                                position: relative;
+                            }
 
-                                .social-button--instagram {
-                                    color: #fff;
-                                    font-size: 1.3em; 
+                            @keyframes bouncy {
+                                0% {top:0em}
+                                40% {top:0em}
+                                43% {top:-0.9em}
+                                46% {top:0em}
+                                48% {top:-0.4em}
+                                50% {top:0em}
+                                100% {top:0em;}
+                            }
 
-                                    &:hover {
-                                        color: #C13584;
-                                    }
-                                }
-
-                                    .social-button--linkedin {
+                                    .social-button--instagram {
                                         color: #fff;
-                                        font-size: 1.3em;
+                                        font-size: 1.3em; 
 
                                         &:hover {
-                                            color: rgb(10 102 194);
+                                            color: #C13584;
                                         }
                                     }
-                                
-                                        .social-button--twitter {
+
+                                        .social-button--linkedin {
                                             color: #fff;
                                             font-size: 1.3em;
-                                            
+
                                             &:hover {
-                                                color: #1d9bf0;
+                                                color: rgb(10 102 194);
                                             }
                                         }
-                                
-                                            .social-button--twitch {
+                                    
+                                            .social-button--twitter {
                                                 color: #fff;
                                                 font-size: 1.3em;
                                                 
                                                 &:hover {
-                                                    color: #a970ff;
+                                                    color: #1d9bf0;
                                                 }
                                             }
-                                
-                                                .log__in {
-                                                    margin: 0 .4em 0 0;
-                                                }
-                                
-                                                    .contacto {
-                                                        font-family: 'Roboto', sans-serif;
-                                                        display: map-get($flexbox, dspl);
-                                                        padding: 1em;
+                                    
+                                                .social-button--twitch {
+                                                    color: #fff;
+                                                    font-size: 1.3em;
+                                                    
+                                                    &:hover {
+                                                        color: #a970ff;
                                                     }
-                                
-                                                        .contacto span, label {
-                                                            color: #fff;
-                                                            margin: 0 .3em;
+                                                }
+                                    
+                                                    .log__in {
+                                                        margin: 0 .4em 0 0;
+                                                    }
+                                    
+                                                        .contacto {
+                                                            font-family: 'Roboto', sans-serif;
+                                                            display: map-get($flexbox, dspl);
+                                                            padding: 1em;
                                                         }
-                                
-                                                            .personal-contact {
-                                                                display: map-get($flexbox, dspl);
-                                                                align-items: map-get($flexbox, algitems);
+                                    
+                                                            .contacto span, label {
+                                                                color: #fff;
+                                                                margin: 0 .3em;
                                                             }
+                                    
+                                                                .personal-contact {
+                                                                    display: map-get($flexbox, dspl);
+                                                                    align-items: map-get($flexbox, algitems);
+                                                                }
 }

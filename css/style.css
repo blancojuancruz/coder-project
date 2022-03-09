@@ -9,12 +9,6 @@
   display: none;
 }
 
-.html {
-  width: fit-content;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
 h2, h3, h4, h5, a, ul, ol, li, p {
   margin: 0;
   padding: 0;
@@ -24,17 +18,27 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 
 .header-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: #26262e;
+}
+@media screen and (max-width: 991px) {
+  .header-container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }
 .header-container .search {
   width: 25%;
   position: relative;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 991px) {
   .header-container .search {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-container .logo-container {
     display: none;
   }
 }
@@ -65,9 +69,9 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   justify-content: space-evenly;
   width: 15%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 991px) {
   .header-container .social-buttons {
-    display: none;
+    width: 50%;
   }
 }
 .header-container .bouncy {
@@ -271,16 +275,6 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 985px) {
-  .main-section .productos-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-items: center;
-  }
-}
 @media screen and (max-width: 500px) {
   .main-section .productos-container {
     display: flex;
@@ -298,6 +292,7 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   }
 }
 .main-section .producto {
+  width: 90%;
   display: flex;
   justify-content: center;
   margin: 1rem;
