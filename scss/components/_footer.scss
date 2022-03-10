@@ -32,6 +32,10 @@
                     flex-direction: map-get($flexbox, directioncolumn);
                     justify-content: map-get($flexbox, contentevenly);
                     align-items: map-get($flexbox, algitems);
+
+                    @media screen and (max-width: 750px) {
+                        margin-bottom: 1em;
+                    }
                 }
 
                     .footer-tittle, .p-footer {
