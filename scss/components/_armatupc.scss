@@ -14,118 +14,106 @@ main {
             font-family: 'Roboto', sans-serif;
             font-size: 1.5em;
         }
-    
+
             .image-container {
                 display: map-get($flexbox, dspl);
                 justify-content: map-get($flexbox, contentcenter);
-                flex-wrap: map-get($flexbox, flw);
             }
     
-                .image-amd {
-                    margin: 1em;
-                    padding: 2em;
-                    background-image: url(../images/back_amd.png);
+                .imagen-responsive {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
                 }
-    
-                    .image-intel {
-                        margin: 1em;
-                        padding: 2em;
-                        background-image: url(../images/back_intel.png);
+                            
+                    .presentation-title {
+                        padding: 1.4em 0 1em 0;
+                        text-align: center;
+                        font-family: 'Nunito', sans-serif;
+                        font-size: 1.6em;
                     }
     
-                        .image-container img {
-                            padding: 2em;
+                        .img__container img {
+                            width: 10em;
+                            height: 10em;
                         }
     
-                            .presentation-title {
-                                padding: 1.4em 0 1em 0;
-                                text-align: center;
-                                font-family: 'Nunito', sans-serif;
-                                font-size: 1.6em;
+                            .intel-description, .amd-description {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-template-rows: repeat(2, 1fr);
+                                grid-column-gap: 0px;
+                                grid-row-gap: 0px;
+                                justify-items: center;
+                                margin: 3rem;
+
+                                @media screen and (max-width: 1138px) {
+                                    display: map-get($flexbox, dspl);
+                                    flex-direction: map-get($flexbox, directioncolumn);
+                                }
                             }
     
-                                .img__container img {
-                                    width: 10em;
-                                    height: 10em;
+                                .contain {
+                                    padding: 2rem;
+                                    display: map-get($flexbox, dspl);
+
+                                    @media screen and (max-width: 1138px) {
+                                        flex-direction: map-get($flexbox, directioncolumn);
+                                        align-items: map-get($flexbox, algitems);
+                                    }
                                 }
     
-                                    .intel-description, .amd-description {
-                                        display: grid;
-                                        grid-template-columns: repeat(2, 1fr);
-                                        grid-template-rows: repeat(2, 1fr);
-                                        grid-column-gap: 0px;
-                                        grid-row-gap: 0px;
-                                        justify-items: center;
-                                        margin: 3rem;
+                                    .title__container {
+                                        display: map-get($flexbox, dspl);
+                                        flex-direction: map-get($flexbox, directioncolumn);
+                                        justify-content: map-get($flexbox, contentaround);
+                                        font-family: 'Montserrat', sans-serif;
+                                        padding: 1rem;
 
                                         @media screen and (max-width: 1138px) {
-                                            display: map-get($flexbox, dspl);
-                                            flex-direction: map-get($flexbox, directioncolumn);
+                                            align-items: center;
                                         }
                                     }
     
-                                        .contain {
-                                            padding: 2rem;
-                                            display: map-get($flexbox, dspl);
-
-                                            @media screen and (max-width: 1138px) {
-                                                flex-direction: map-get($flexbox, directioncolumn);
-                                                align-items: map-get($flexbox, algitems);
-                                            }
+                                        .box-cont {
+                                            border-radius: 4px;
+                                            transition: all 0.2s ease-out;
+                                            position: relative;
+                                            overflow: hidden;
+                                            cursor: pointer;
+                                            top:0
                                         }
     
-                                            .title__container {
-                                                display: map-get($flexbox, dspl);
-                                                flex-direction: map-get($flexbox, directioncolumn);
-                                                justify-content: map-get($flexbox, contentaround);
-                                                font-family: 'Montserrat', sans-serif;
-                                                padding: 1rem;
-
-                                                @media screen and (max-width: 1138px) {
-                                                    align-items: center;
-                                                }
+                                            .box-cont:hover{
+                                                box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+                                                top: -6px;
                                             }
     
-                                                .box-cont {
-                                                    border-radius: 4px;
-                                                    transition: all 0.2s ease-out;
-                                                    position: relative;
-                                                    overflow: hidden;
-                                                    cursor: pointer;
-                                                    top:0
+                                                .carrousel {
+                                                    padding: 5rem;
+                                                    background-color: #e8e8ed;
                                                 }
-    
-                                                    .box-cont:hover{
-                                                        box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
-                                                        top: -6px;
-                                                    }
-    
-                                                        .carrousel {
-                                                            padding: 5rem;
-                                                            background-color: #e8e8ed;
-                                                        }
 
     
-                                                            .main-armado {
+                                                    .main-armado {
+                                                        display: map-get($flexbox, dspl);
+                                                    }
+    
+                                                        .armado {
+                                                            display: map-get($flexbox, dspl);
+                                                            justify-content: map-get($flexbox, contentstart);
+                                                            margin: 2.4em;
+                                                            border: 2px solid #0071bc;
+                                                        }
+                                                            .first-items {
                                                                 display: map-get($flexbox, dspl);
+                                                                width: 100%;
+                                                                justify-content: map-get($flexbox, contentaround);
                                                             }
     
-                                                                .armado {
-                                                                    display: map-get($flexbox, dspl);
-                                                                    justify-content: map-get($flexbox, contentstart);
-                                                                    margin: 2.4em;
-                                                                    border: 2px solid #0071bc;
+                                                                .first-items img {
+                                                                    margin-top: 3rem;
+                                                                    border: 3px solid #000;
+                                                                    border-radius: 10%;
                                                                 }
-    
-                                                                    .first-items {
-                                                                        display: map-get($flexbox, dspl);
-                                                                        width: 100%;
-                                                                        justify-content: map-get($flexbox, contentaround);
-                                                                    }
-    
-                                                                        .first-items img {
-                                                                            margin-top: 3rem;
-                                                                            border: 3px solid #000;
-                                                                            border-radius: 10%;
-                                                                        }
 }

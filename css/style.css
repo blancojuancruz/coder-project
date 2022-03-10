@@ -477,20 +477,11 @@ main .guia {
 main .image-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
-main .image-amd {
-  margin: 1em;
-  padding: 2em;
-  background-image: url(../images/back_amd.png);
-}
-main .image-intel {
-  margin: 1em;
-  padding: 2em;
-  background-image: url(../images/back_intel.png);
-}
-main .image-container img {
-  padding: 2em;
+main .imagen-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 main .presentation-title {
   padding: 1.4em 0 1em 0;
@@ -617,7 +608,7 @@ main .first-items img {
 }
 
 .processors-container {
-  margin: 1rem 0.5rem;
+  margin: 1rem 0;
   border: 6px inset rgba(28, 110, 164, 0.52);
   border-radius: 6px;
   padding: 1em 0;
@@ -628,6 +619,7 @@ main .first-items img {
 @media screen and (max-width: 575px) {
   .processors-container {
     flex-direction: column;
+    max-width: 100%;
   }
 }
 .processors-container .parraf {

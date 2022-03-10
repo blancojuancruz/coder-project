@@ -1,5 +1,5 @@
 .processors-container {
-    margin: 1rem .5rem;
+    margin: 1rem 0;
     border: 6px inset rgba(28,110,164,0.52);
     border-radius: 6px;
     padding: 1em 0;
@@ -9,6 +9,7 @@
 
     @media screen and (max-width: 575px) {
         flex-direction: map-get($flexbox, directioncolumn);
+        max-width: 100%;
     }
 
         .parraf {
