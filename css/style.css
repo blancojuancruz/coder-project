@@ -282,7 +282,7 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   }
 }
 .main-section .producto {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: center;
   margin: 1rem;
@@ -313,20 +313,15 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 }
 
 .auto-selection {
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: center;
   background-image: url(../images/gridcover.jpg);
   background-size: cover;
 }
 .auto-selection .animate__backInLeft {
   font-family: "Bebas neue", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #dbdee7;
-}
-@media screen and (max-width: 1330px) {
-  .auto-selection .animate__backInLeft {
-    color: #000;
-  }
 }
 .auto-selection .grid-items {
   cursor: pointer;
@@ -358,15 +353,15 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 
 .shipments {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding: 2rem 0;
-  margin: 2rem 0;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
 }
-@media screen and (max-width: 574px) {
-  .shipments {
-    display: none;
-  }
+.shipments .envios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .shipments .shipments-input {
   font-family: "Nunito", sans-serif;
@@ -383,12 +378,18 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 }
 .shipments .btn-primary {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.5em;
 }
 .shipments .shipments-tittle {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-family: "Nunito", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
+}
+.shipments .iframe {
+  margin-top: 1em;
+}
+.shipments .iframe iframe {
+  max-width: 200px;
 }
 
 .main-footer {

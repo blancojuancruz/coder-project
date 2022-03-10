@@ -1,19 +1,15 @@
 @import '../base/maps.scss';
 
 .auto-selection {
-    padding: 3rem 0;
+    padding: 2rem 0;
     text-align: center;
     background-image: url(../images/gridcover.jpg);
     background-size: cover;
 
         .animate__backInLeft {
             font-family: 'Bebas neue', cursive;
-            font-size: 3rem;
+            font-size: 2rem;
             color: #dbdee7;
-
-            @media screen and (max-width: 1330px) {
-                color: #000;
-            }
         }
     
             .grid-items {
