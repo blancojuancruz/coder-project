@@ -15,8 +15,8 @@
             .grid-items {
                 cursor: pointer;
                 margin: .5em .5em;
-                width: 12em;
-                height: 12em;
+                width: 30%;
+                height: 30%;
                 display: map-get($flexbox, dspl);
                 flex-direction: map-get($flexbox, directioncolumn);
                 justify-content: map-get($flexbox, contentevenly);
@@ -37,9 +37,10 @@
                         .grid-items a {
                             font-family: 'Crete Round', sans-serif;
                             color: rgb(16, 26, 48);
+                            font-size: 1em;
                         }
         
                             .grid-items span i {
-                                font-size: 3rem;
+                                font-size: 2em;
                             }
 }

@@ -1,11 +1,15 @@
 .processors-container {
     margin: 1rem .5rem;
-    border: 8px inset rgba(28,110,164,0.52);
+    border: 6px inset rgba(28,110,164,0.52);
     border-radius: 6px;
     padding: 1em 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     background-color: #49678d;
+
+    @media screen and (max-width: 575px) {
+        flex-direction: map-get($flexbox, directioncolumn);
+    }
 
         .parraf {
             color: #fff;
