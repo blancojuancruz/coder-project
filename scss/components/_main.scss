@@ -58,6 +58,7 @@
                             display: map-get($flexbox, dspl);
                             flex-direction: map-get($flexbox, directioncolumn);
                             justify-content: map-get($flexbox, contentbetween);
+                            width: 80%;
                             margin: 0 1em;
                         }
     
@@ -70,22 +71,4 @@
                                 .price {
                                     align-self: map-get($flexbox, algselfstart);
                                 }
-    
-                                    .add-cart {
-                                        align-self: center;
-                                    }
-    
-                                        .add-cart button {
-                                            font-family: 'Montserrat', serif;
-                                            color: #fff;
-                                            background: #0d6efd;
-                                            padding: .4em 1em;
-                                            border-radius: 5px;
-                                            border: none;
-
-                                            &:hover {
-                                                background: #0b5ed7;
-                                                letter-spacing: 1px;
-                                            }
-                                        }
 }

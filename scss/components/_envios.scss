@@ -1,12 +1,15 @@
 @import '../base/maps.scss';
 
 .shipments {
-    width: 100%;
     display: map-get($flexbox, dspl);
     align-items: map-get($flexbox, algitems);
     flex-direction: map-get($flexbox, directioncolumn);
     padding: 2rem 0;
     margin: 2rem 0;
+
+    @media screen and (max-width: 574px) {
+        display: none;
+    }
 
         .shipments-input {
             font-family: 'Nunito', sans-serif;
@@ -23,19 +26,14 @@
             }
         }
 
-        .btn-primary {
-            width: 100%;
-            margin-top: 1rem;
-        }
+            .btn-primary {
+                width: 100%;
+                margin-top: 1rem;
+            }
 
                 .shipments-tittle {
                     margin-bottom: 1rem;
                     font-family: 'Nunito', sans-serif;
-                    font-size: 1.8rem;
+                    font-size: 1.8em;
                 }
-    
-                    iframe {
-                        margin-top: 3em;
-                        width: 34.751em;
-                    }
 }

@@ -187,7 +187,7 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   max-width: 100vw;
   position: relative;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 600px) {
   .slider-container {
     display: none;
   }
@@ -311,6 +311,7 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 80%;
   margin: 0 1em;
 }
 .main-section .titulo {
@@ -320,31 +321,16 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 .main-section .price {
   align-self: start;
 }
-.main-section .add-cart {
-  align-self: center;
-}
-.main-section .add-cart button {
-  font-family: "Montserrat", serif;
-  color: #fff;
-  background: #0d6efd;
-  padding: 0.4em 1em;
-  border-radius: 5px;
-  border: none;
-}
-.main-section .add-cart button:hover {
-  background: #0b5ed7;
-  letter-spacing: 1px;
-}
 
 .auto-selection {
-  padding: 5rem 0;
+  padding: 3rem 0;
   text-align: center;
   background-image: url(../images/gridcover.jpg);
   background-size: cover;
 }
 .auto-selection .animate__backInLeft {
   font-family: "Bebas neue", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #dbdee7;
 }
 @media screen and (max-width: 1330px) {
@@ -352,15 +338,11 @@ h2, h3, h4, h5, a, ul, ol, li, p {
     color: #000;
   }
 }
-.auto-selection .row {
-  margin: 0;
-  padding: 0;
-}
 .auto-selection .grid-items {
   cursor: pointer;
-  margin: 1em 1em;
-  width: 14em;
-  height: 14em;
+  margin: 0.5em 0.5em;
+  width: 12em;
+  height: 12em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -385,12 +367,16 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 }
 
 .shipments {
-  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 2rem 0;
   margin: 2rem 0;
+}
+@media screen and (max-width: 574px) {
+  .shipments {
+    display: none;
+  }
 }
 .shipments .shipments-input {
   font-family: "Nunito", sans-serif;
@@ -412,11 +398,7 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 .shipments .shipments-tittle {
   margin-bottom: 1rem;
   font-family: "Nunito", sans-serif;
-  font-size: 1.8rem;
-}
-.shipments iframe {
-  margin-top: 3em;
-  width: 34.751em;
+  font-size: 1.8em;
 }
 
 .main-footer {
