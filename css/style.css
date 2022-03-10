@@ -363,6 +363,7 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em;
 }
 .shipments .shipments-input {
   font-family: "Nunito", sans-serif;
