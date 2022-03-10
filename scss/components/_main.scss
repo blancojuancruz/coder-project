@@ -28,47 +28,35 @@
                 }
             }
     
-                .productos-container a {
-                    display: inline-block;
-                    width: 75%;
-                    color: #000;
+                .producto {
+                    width: 60%;
+                    display: map-get($flexbox, dspl);
+                    justify-content: center;
+                    margin: 1rem;
+                    padding: .5em;
+                    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+                    top: -6px;
+                    font-family: 'Montserrat', serif;
 
-                    @media screen and (max-width: 985px) {
-                        width: 100%;
+                    @media screen and (max-width: 500px) {
+                        align-items: map-get($flexbox, algitems);
+                        flex-direction: map-get($flexbox, directioncolumn);
                     }
                 }
     
-                    .producto {
-                        width: 90%;
+                    .contenido-principal {
                         display: map-get($flexbox, dspl);
-                        justify-content: center;
-                        margin: 1rem;
-                        padding: .5em;
-                        box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
-                        top: -6px;
-                        font-family: 'Montserrat', serif;
-
-                        @media screen and (max-width: 500px) {
-                            align-items: map-get($flexbox, algitems);
-                            flex-direction: map-get($flexbox, directioncolumn);
-                        }
+                        flex-direction: map-get($flexbox, directioncolumn);
+                        justify-content: map-get($flexbox, contentbetween);
+                        width: 80%;
+                        margin: 0 1em;
                     }
-    
-                        .contenido-principal {
-                            display: map-get($flexbox, dspl);
-                            flex-direction: map-get($flexbox, directioncolumn);
-                            justify-content: map-get($flexbox, contentbetween);
-                            width: 80%;
-                            margin: 0 1em;
-                        }
-    
-                            .titulo {
-                                font-size: 1.4em;
-                                font-weight: 20px;
+                        .titulo {
+                            font-size: 1.4em;
+                            font-weight: 20px;
                                 
+                        }
+                            .price {
+                                align-self: map-get($flexbox, algselfstart);
                             }
-    
-                                .price {
-                                    align-self: map-get($flexbox, algselfstart);
-                                }
 }
