@@ -579,8 +579,9 @@ main .first-items img {
   margin: 1.8rem 0;
 }
 .retirar-header .image-retirar__container {
-  width: 420px;
-  height: 250px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .retirar-header .retirar-tittle {
   font-size: 2rem;

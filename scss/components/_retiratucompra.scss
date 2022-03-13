@@ -5,23 +5,24 @@
     flex-direction: map-get($flexbox, directioncolumn);
     align-items: map-get($flexbox, algitems);
     margin: 1.8rem 0;
+
+    .image-retirar__container {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
     
-        .image-retirar__container{
-            width: 420px;
-            height: 250px;
+        .retirar-tittle {
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
         }
 
-            .retirar-tittle {
-                font-size: 2rem;
-                font-family: 'Roboto', sans-serif;
+            .retirar-p {
+                font-size: 1.2em;
+                font-family: 'Nunito', sans-serif;
+                text-decoration: underline;
+                text-transform: uppercase;
             }
-
-                .retirar-p {
-                    font-size: 1.2em;
-                    font-family: 'Nunito', sans-serif;
-                    text-decoration: underline;
-                    text-transform: uppercase;
-                }
 }
 
 .steps {
