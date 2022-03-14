@@ -152,7 +152,6 @@ h2, h3, h4, h5, a, ul, ol, li, p {
   padding: 0;
   margin: 0;
   background-color: #aaa;
-  border-bottom: 1px solid #000;
 }
 .navbar .container-fluid {
   margin: 0;
@@ -177,9 +176,9 @@ h2, h3, h4, h5, a, ul, ol, li, p {
 }
 .navbar .nav-link__hover:hover {
   color: #000;
-  border-bottom: 0.1rem solid #000;
-  padding-bottom: 0.2em;
-  transition: 0.4s;
+  border-bottom: 0.1em solid #000;
+  transition: 0.2s;
+  padding-bottom: 0.1em;
 }
 
 .slider-container {
