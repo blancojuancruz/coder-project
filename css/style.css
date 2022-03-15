@@ -9,7 +9,7 @@
   display: none;
 }
 
-h2, h3, h4, h5, a, ul, ol, li, p {
+h2, h3, h4, h5, a, ul, ol, li, p, a {
   margin: 0;
   padding: 0;
   font-size: 1rem;
@@ -630,6 +630,51 @@ main .first-items img {
 }
 .processors-container .parraf {
   color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+* .disclaimer {
+  display: none;
+}
+
+h2, h3, h4, h5, a, ul, ol, li, p, a {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.workin-progress {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 20vw;
+  background-color: #26262e;
+}
+.workin-progress .work-txt {
+  color: #fff;
+  text-align: center;
+}
+.workin-progress .work-txt a {
+  color: #fff;
+}
+.workin-progress .work-txt a:hover {
+  color: #0d6efd;
+}
+.workin-progress svg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

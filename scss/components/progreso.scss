@@ -1,0 +1,32 @@
+@import '../base/general';
+
+.workin-progress {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 20vw;
+    background-color: #26262e;
+
+        .work-txt {
+            color: #fff;
+            text-align: center;
+        }
+
+            .work-txt a {
+                color: #fff;
+
+                &:hover {
+                    color: #0d6efd;
+                }
+            }
+
+                svg {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                }
+}
