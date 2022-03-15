@@ -1,16 +1,16 @@
 @import '../base/maps.scss';
 
 .shipments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: map-get($flexbox, dspl);
+    flex-direction: map-get($flexbox, directioncolumn);
+    align-items: map-get($flexbox, algitems);
     padding: 1rem 0;
     margin: 1rem 0;
 
         .envios-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: map-get($flexbox, dspl);
+            flex-direction: map-get($flexbox, directioncolumn);
+            align-items: map-get($flexbox, algitems);
             margin: 1em;
         }
 

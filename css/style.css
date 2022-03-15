@@ -182,18 +182,17 @@ h2, h3, h4, h5, a, ul, ol, li, p, a {
 }
 
 .slider-container {
-  overflow: hidden;
   max-width: 100vw;
+  overflow: hidden;
   position: relative;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .slider-container {
     display: none;
   }
 }
 .slider-container .slides {
   display: flex;
-  padding: 0;
   width: 400%;
   animation: slider 18s infinite alternate;
   animation-timing-function: ease-out;
@@ -234,6 +233,11 @@ h2, h3, h4, h5, a, ul, ol, li, p, a {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 700px) {
+  .slider-container .slider-pad {
+    display: none;
+  }
+}
 .slider-container .ol-slider li {
   border-radius: 50%;
   background-color: #0071bc;
@@ -260,7 +264,7 @@ h2, h3, h4, h5, a, ul, ol, li, p, a {
 .main-section .banner {
   margin: 2rem;
 }
-@media screen and (max-width: 1138px) {
+@media screen and (max-width: 990px) {
   .main-section .banner {
     display: none;
   }
@@ -495,8 +499,8 @@ main .presentation-title {
   font-size: 1.6em;
 }
 main .img__container img {
-  width: 10em;
-  height: 10em;
+  width: 8em;
+  height: 6em;
 }
 main .intel-description, main .amd-description {
   display: grid;
